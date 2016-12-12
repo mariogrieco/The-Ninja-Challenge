@@ -83,9 +83,9 @@ public class Scena4World implements Screem {
 
             fondo[2] = ImageIO.read(new File("src/level1/s4/Fondo/3.png"));
             border[2][0] = (width / 2) - (width / 4);
-            border[2][1] = heigth - 186;
+            border[2][1] = heigth - 181;
             border[2][2] = (width / 2);
-            border[2][3] = 186;
+            border[2][3] = 181;
 
             alligator[0] = ImageIO.read(new File("src/level1/s4/Fondo/alligator0.png"));
             alligator[1] = ImageIO.read(new File("src/level1/s4/Fondo/alligator1.png"));
