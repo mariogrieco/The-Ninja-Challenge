@@ -381,7 +381,7 @@ public class LevelsController extends JPanel implements Screem {
 
         contador = 0;
 
-        wordlPaint = new Timer(1, new ActionListener() {
+        wordlPaint = new Timer(10, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 nameConteiner.setLocation((int) main.x + 50, (int) main.y - 50);
