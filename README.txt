@@ -1,6 +1,3 @@
-# The-Ninja-Challenge
-Juego Creado para un proyecto de la unet 
-
 Instrucciones y caso de error ( no subir el resultado de netbeans solo el codigo! con clean )
 
 1.-Importar con Netbeans ( creado con la ultima version para el 12/12/2016 ) usar cualquier version de java superior o igual a la 1.7
@@ -39,9 +36,9 @@ TODO
  - Cualquier Otra idea para el juego.
  = Entre otros.
 
-Creador
 
- - Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira. 
+Colaboladores
+ - Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira.
 	- Level Artist
 	- Lead Game Designer
 	- Level Artist
@@ -49,7 +46,5 @@ Creador
 	- Creative Director
  	- Level Designer
 
-Colaboladores
-
- - Sebastian Josue Villamizar  - Instituto Politecnico Santiago MariÃ±o.
+ - Sebastian Josue Villamizar  - Instituto Politecnico Santiago Mariño.
 	- Game Tester 
