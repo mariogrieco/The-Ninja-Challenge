@@ -256,7 +256,7 @@ public class Make extends JFrame implements Screem {
  */
     public Make() {
              JOptionPane.showMessageDialog(null, "Juego Creado por Mario Josue Grieco Villamizar ci 26205981");
-             JOptionPane.showMessageDialog(null, "El codigo en github licencia MIT");
+             JOptionPane.showMessageDialog(null, "El codigo en github licencia Apache 2.0");
              JOptionPane.showMessageDialog(null, "mariojosuexz@gmail.com");
              JOptionPane.showMessageDialog(null, "UNET - segundo semestre");
              JOptionPane.showMessageDialog(null, "7/12/216");
