@@ -23,8 +23,7 @@ import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
 /**
- * Esta clase es el controlador de la scena numero 1
- * detector de colisiones
+ * Esta clase es el controlador de la scena numero 1 detector de colisiones
  * implements ActionListener
  *
  * @author: Mario Josue Grieco Villamizar Universidad Nacional Experimental del
@@ -93,6 +92,8 @@ public class Scena2Controller implements ActionListener, Screem {
      */
     int init = 0;
 
+    public int one = 0;
+
     /**
      * Constructor parametrico parametro unico LevelsController nombredo world
      *
@@ -113,6 +114,7 @@ public class Scena2Controller implements ActionListener, Screem {
     public void actionPerformed(ActionEvent e) {
         if (init == 0) {
             world.sonido.cierra.stop();
+            world.scena2.maluco.orientation = -1;
             init = 1;
         }
 
@@ -171,6 +173,7 @@ public class Scena2Controller implements ActionListener, Screem {
             world.scena2.maluco.throwing = false;
             world.scena2.maluco.deading = true;
             world.viewLabel.setPoints2(1750);
+            one = 1;
             int increments = 1;
             for (int i = 0; i < 3; i++) {
                 if (world.scena2.coins[i].visible == false) {
@@ -250,86 +253,95 @@ public class Scena2Controller implements ActionListener, Screem {
         }
 
         // pequeña IA n#1
-        if (world.scena2.maluco.ground == false) {
-            if (world.scena2.getRectangle(1).intersects(world.scena2.maluco.getRectangle())) {
-                world.scena2.maluco.ground = true;
-            }
-        }
-        if (world.scena2.maluco.deading == false && world.main.onTop == false && warning2 == 0) {
+        if (one == 0) {
 
             if (world.scena2.maluco.ground == false) {
                 if (world.scena2.getRectangle(1).intersects(world.scena2.maluco.getRectangle())) {
                     world.scena2.maluco.ground = true;
                 }
             }
-            if (world.scena2.maluco.x > 1840) { // no tiene relativo cuidado!
-                world.scena2.maluco.runing = false;
-            }
-            if (world.scena2.maluco.ground && warning == 0) {
-                world.scena2.maluco.runing = true;
-            }
-            if (world.scena2.maluco.x < (width / 2) + 10 + world.scena2.relativeCoord && warning == 0) {
-                world.scena2.maluco.runing = false;
-                if (world.scena2.maluco.throwing == false && world.scena2.maluco.instantiate == false) {
-                    world.scena2.maluco.throwing = false;
-                }
-            }
-            if ((world.scena2.maluco.x - world.main.x < 350 + world.scena2.relativeCoord) && world.scena2.maluco.orientation < 0 && warning == 0) {
-                world.scena2.maluco.orientation *= -1;
-                world.scena2.maluco.runing = true;
-                world.scena2.maluco.throwing = false;
-                warning = 1;
-            }
+            if (world.scena2.maluco.deading == false && world.main.onTop == false && warning2 == 0) {
 
-            if (warning == 1 && world.scena2.maluco.gliding == false) {
-                if (contador2 % 40 == 0) {
+                if (world.scena2.maluco.ground == false) {
+                    if (world.scena2.getRectangle(1).intersects(world.scena2.maluco.getRectangle())) {
+                        world.scena2.maluco.ground = true;
+                    }
+                }
+                if (world.scena2.maluco.x > (width * 2) - 400) { // no tiene relativo cuidado!
                     world.scena2.maluco.runing = false;
-                    world.scena2.maluco.orientation *= -1;
-                    world.scena2.maluco.throwing = true;
-
-                    warning = 2;
-                    contador2 = 1;
                 }
-                contador2++;
+                if (world.scena2.maluco.ground && warning == 0) {
+                    world.scena2.maluco.throwing = false;
+                    world.scena2.maluco.runing = true;
+                }
+                if (world.scena2.maluco.x < (width / 2) + 10 + world.scena2.relativeCoord && warning == 0) {
+                    world.scena2.maluco.runing = false;
+                    if (world.scena2.maluco.throwing == false && world.scena2.maluco.instantiate == false) {
+                        world.scena2.maluco.throwing = false;
+                    }
+                }
+                if (world.scena2.maluco.x < width + 100) {
+                    world.scena2.maluco.orientation *= -1;
+                    world.scena2.maluco.runing = true;
+                }
+                if ((world.scena2.maluco.x - world.main.x < 350 + world.scena2.relativeCoord) && world.scena2.maluco.orientation < 0 && warning == 0) {
+                    world.scena2.maluco.orientation *= -1;
+                    world.scena2.maluco.runing = true;
+                    world.scena2.maluco.throwing = false;
+                    warning = 1;
+                }
+
+                if (warning == 1 && world.scena2.maluco.gliding == false) {
+                    if (contador2 % 40 == 0) {
+                        world.scena2.maluco.runing = false;
+                        world.scena2.maluco.orientation *= -1;
+                        world.scena2.maluco.throwing = true;
+
+                        warning = 2;
+                        contador2 = 1;
+                    }
+                    contador2++;
+                }
+                if (warning == 2 && world.scena2.maluco.throwing == false && world.scena2.maluco.instantiate == false && world.scena2.maluco.deading == false) {
+                    world.scena2.maluco.throwing = true;
+                }
             }
-            if (warning == 2 && world.scena2.maluco.throwing == false && world.scena2.maluco.instantiate == false && world.scena2.maluco.deading == false) {
+
+            if (world.main.onTop && world.scena2.maluco.deading == false || world.scena2.maluco.ground == true && world.main.onClian) {
+                if (warning2 == 0) {
+                    world.scena2.maluco.throwing = false;
+                    world.scena2.maluco.runing = true;
+                    warning2 += 1;
+                }
+                if (warning2 == 1) {
+                    if (contador3 % 100 == 0) {
+                        world.scena2.maluco.orientation *= -1;
+                        world.scena2.maluco.runing = false;
+                        warning2 = 9;
+                        contador3 = 0;
+                    }
+                }
+                contador3++;
+
+            }
+            if (warning2 == 9 && world.scena2.maluco.deading == false && world.main.ground == true) {
+                if ((world.main.x - world.scena2.maluco.x) < 250) {
+                    world.scena2.maluco.orientation *= -1;
+                    world.scena2.maluco.runing = true;
+                    warning2 = 10;
+                }
+            }
+            if (world.scena2.maluco.x < 100 + world.scena2.relativeCoord && world.scena2.maluco.deading == false) {
+                world.scena2.maluco.runing = false;
+
+                if (warning != 20) {
+                    world.scena2.maluco.orientation *= -1;
+                    warning = 20;
+                }
                 world.scena2.maluco.throwing = true;
             }
         }
-
-        if (world.main.onTop && world.scena2.maluco.deading == false || world.scena2.maluco.ground == true && world.main.onClian) {
-            if (warning2 == 0) {
-                world.scena2.maluco.throwing = false;
-                world.scena2.maluco.runing = true;
-                warning2 += 1;
-            }
-            if (warning2 == 1) {
-                if (contador3 % 100 == 0) {
-                    world.scena2.maluco.orientation *= -1;
-                    world.scena2.maluco.runing = false;
-                    warning2 = 9;
-                    contador3 = 0;
-                }
-            }
-            contador3++;
-
-        }
-        if (warning2 == 9 && world.scena2.maluco.deading == false && world.main.ground == true) {
-            if ((world.main.x - world.scena2.maluco.x) < 250) {
-                world.scena2.maluco.orientation *= -1;
-                world.scena2.maluco.runing = true;
-                warning2 = 10;
-            }
-        }
-        if (world.scena2.maluco.x < 100 + world.scena2.relativeCoord && world.scena2.maluco.deading == false) {
-            world.scena2.maluco.runing = false;
-
-            if (warning != 20) {
-                world.scena2.maluco.orientation *= -1;
-                warning = 20;
-            }
-            world.scena2.maluco.throwing = true;
-        }
+        // end 1
 
         // Items controller
         if (world.main.getRectangle().intersects(world.scena2.coins[0].getEnemi2d()) && world.scena2.coins[0].visible == true && world.pasing == false) {

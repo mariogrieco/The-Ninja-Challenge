@@ -28,7 +28,6 @@ import ScenasWorld.Scena8World;
 import static Windows.Screem.heigth;
 import static Windows.Screem.width;
 import java.awt.BasicStroke;
-import java.lang.Integer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -201,9 +200,9 @@ public class LevelsController extends JPanel implements Screem {
     public boolean moving = false;
 
     /**
-     * Se esta bloqueando la entrada por teclado
+     * Se esta bloqueando la entrada por teclado 
      */
-    boolean blockEntry = false;
+    public boolean blockEntry = false;
     /**
      * se bloquea el movimiento horizontal de los paneles
      */
@@ -506,7 +505,7 @@ public class LevelsController extends JPanel implements Screem {
                         blockgo = false;
                         viewLabel.setRelative(10);
                         main.runing = true;
-                        if (movements * -1 >= width * sceneNumber) {
+                        if ((movements * -1)+10 >= width * sceneNumber) {
                             sceneNumber++;
                             main.runing = false;
                             blockEntry = false;
@@ -538,7 +537,7 @@ public class LevelsController extends JPanel implements Screem {
                         viewLabel.setRelative(-10);
                         blockEntry = true;
                         main.runing = true;
-                        if (movements * -1 <= width * (sceneNumber - 2)) {
+                        if ((movements * -1)+10 <= width * (sceneNumber - 2)) {
                             main.runing = false;
                             sceneNumber--;
                             blockgo = true;

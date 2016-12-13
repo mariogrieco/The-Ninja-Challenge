@@ -77,7 +77,7 @@ public class MenuSecundario extends MenuController implements Screem {
             }
         }
 
-        developer = new JLabel("Modo Desarrollador");
+        developer = new JLabel("click para activar modo desarrollador");
         sheeatsPanel = new JPanel();
         labelMainSpeed = new JLabel("Main Animation Speed:");
         identifique = new JLabel("Main Player:");
