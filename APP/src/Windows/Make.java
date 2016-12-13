@@ -130,7 +130,7 @@ public class Make extends JFrame implements Screem {
                         controller.main.orientation = 1;
                     }
                     if (e.getKeyCode() == KeyEvent.VK_C) {
-                        if (controller.main.runing == true && controller.main.gliding == false) {
+                        if (controller.main.runing == true && controller.main.gliding == false && controller.main.jumping == false) {
                             controller.main.sliding = true;
                         }
                     }

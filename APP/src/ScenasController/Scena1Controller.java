@@ -99,6 +99,7 @@ public class Scena1Controller implements ActionListener {
      */
     public void actionPerformed(ActionEvent e) {
         if (init == 0) {
+            world.sonido.cierra.setMicrosecondPosition(0);
             world.sonido.cierra.loop(Clip.LOOP_CONTINUOUSLY);
             init = 1;
         }

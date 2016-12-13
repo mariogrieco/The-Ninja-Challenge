@@ -510,6 +510,7 @@ public class Personaje implements MainController {
                 // sinido debe estar primero 
                 if ( jumping && gliding == false ) {
                     if ( jumpSound.isRunning() == false){
+                        jumpSound.setMicrosecondPosition(0);
                         jumpSound.loop(Clip.LOOP_CONTINUOUSLY);
                     }
                 } else{
@@ -520,7 +521,9 @@ public class Personaje implements MainController {
                     if (bookFlip.isRunning() == false) {
                         if (bookFlip.isRunning() == true) {
                             bookFlip.stop();
+                            bookFlip.setMicrosecondPosition(0);
                         }
+                        bookFlip.setMicrosecondPosition(0);
                         bookFlip.loop(Clip.LOOP_CONTINUOUSLY);
                     }
                 }else{
@@ -535,10 +538,10 @@ public class Personaje implements MainController {
                 }
 
                 if (throwing) {
-                    if (Kunai[soundKstate].isRunning() == false) {
+                    if ( Kunai[soundKstate].isRunning() == false) {
+                        Kunai[soundKstate].setMicrosecondPosition(0);
                         Kunai[soundKstate].loop(Clip.LOOP_CONTINUOUSLY);
                     }
-
                 } else {
                     Kunai[soundKstate].stop();
                     if (soundKstate + 1 < 3) {
