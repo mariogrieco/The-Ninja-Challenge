@@ -54,13 +54,7 @@ ultima actualizacion 13/12/2016.
 Creador
 
  - Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira. 
-	- Level Artist
-	- Lead Game Designer
-	- administrator
-	- Creative Director
- 	- Level Designer
-
+ 
 Colaboladores
 
  - Sebastian Josue Villamizar  - Instituto Politecnico Santiago Mariño.
-	- Game Tester 
