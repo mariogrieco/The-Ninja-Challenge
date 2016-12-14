@@ -1,6 +1,8 @@
 # The-Ninja-Challenge
 Juego Creado para un proyecto de la unet 
 - Para mas informacion del codigo Generar el javadoc con netbeans
+- #### la calidad de las images fue reducida excesivamente para usar las images de alta resolucion usar las de la carpeta con el nombre
+srcOriginal.
 
 ##Instrucciones y caso de error 
 
@@ -28,6 +30,14 @@ nota ( no subir el resultado de netbeans solo el codigo! con clean ).
 Esta aplicacion de java fue creada en un periodo de tiempo muy corto
 para un proyecto universitario por lo cual presenta una gran cantidad de errores ( forma correcta de implementar la POO)
 y algunos de logica.
+
+![Alt text](/1.png "Level del Juego")
+
+![Alt text](/2.png "Level del Juego")
+
+![Alt text](/3.png "Level del Juego")
+
+![Alt text](/4.png "Level del Juego")
 
 seran arreglados en versiones posteriores ( version actual 0.02 para la fecha 11/12/2016 ),
 ( aun no agregados los derechos de autor de las imagenes o los recursos usados en esta version ).
