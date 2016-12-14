@@ -1,5 +1,6 @@
 # The-Ninja-Challenge
 Juego Creado para un proyecto de la unet 
+- Para mas informacion del codigo Generar el javadoc con netbeans
 
 Instrucciones y caso de error ( no subir el resultado de netbeans solo el codigo! con clean )
 
