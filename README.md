@@ -2,7 +2,7 @@
 Juego Creado para un proyecto de la unet 
 - Para mas informacion del codigo Generar el javadoc con netbeans
 
-#Instrucciones y caso de error ( no subir el resultado de netbeans solo el codigo! con clean )
+##Instrucciones y caso de error ( no subir el resultado de netbeans solo el codigo! con clean )
 
 1.-Importar con Netbeans ( creado con la ultima version para el 12/12/2016 ) usar cualquier version de java superior o igual a la 1.7
 
