@@ -33,14 +33,14 @@ y algunos de logica.seran arreglados en versiones posteriores ( version actual 0
 ( aun no agregados los derechos de autor de las imagenes o los recursos usados en esta version ).
 ultima actualizacion 13/12/2016.
 
-**Escenas del juego con imagenes de alta resolucion**
-![Alt text](/1.png "Level del Juego")
+**Escenas del juego**
+![Alt text](/github/1.png "Level del Juego")
 
-![Alt text](/2.png "Level del Juego")
+![Alt text](/github/2.png "Level del Juego")
 
-![Alt text](/3.png "Level del Juego")
+![Alt text](/github/3.png "Level del Juego")
 
-![Alt text](/4.png "Level del Juego")
+![Alt text](/github/4.png "Level del Juego")
 
 
 ###TODO
