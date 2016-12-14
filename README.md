@@ -2,7 +2,7 @@
 Juego Creado para un proyecto de la unet 
 - Para mas informacion del codigo Generar el javadoc con netbeans
 
-##Instrucciones y caso de error ( no subir el resultado de netbeans solo el codigo! con clean )
+##Instrucciones y caso de error 
 
 1.-Importar con Netbeans ( creado con la ultima version para el 12/12/2016 ) usar cualquier version de java superior o igual a la 1.7
 
@@ -21,7 +21,7 @@ Juego Creado para un proyecto de la unet
 
 4.- Posibles errores con los timers debido a la velocidad interna de cada computador. ( velocidad de animaciones, etc ).
 
-
+nota ( no subir el resultado de netbeans solo el codigo! con clean ).
 
 
 
@@ -32,7 +32,7 @@ y algunos de logica.
 seran arreglados en versiones posteriores ( version actual 0.02 para la fecha 11/12/2016 ),
 ( aun no agregados los derechos de autor de las imagenes o los recursos usados en esta version ).
 
-TODO
+###TODO
  - BUGS.
  - Mejoras en el UI & UX.
  - Mejoras de rendimientos.
@@ -45,7 +45,6 @@ Creador
  - Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira. 
 	- Level Artist
 	- Lead Game Designer
-	- Level Artist
 	- administrator
 	- Creative Director
  	- Level Designer
