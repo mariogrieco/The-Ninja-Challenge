@@ -37,14 +37,9 @@ TODO
  = Entre otros.
 
 
-Colaboladores
+Creador
  - Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira.
-	- Level Artist
-	- Lead Game Designer
-	- Level Artist
-	- administrator
-	- Creative Director
- 	- Level Designer
 
- - Sebastian Josue Villamizar  - Instituto Politecnico Santiago Mariño.
-	- Game Tester 
+Colaboladores
+ - Sebastian Josue Villamizar  - Instituto Politecnico Santiago Mariño
+...

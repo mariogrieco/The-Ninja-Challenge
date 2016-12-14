@@ -18,16 +18,10 @@ BUGS.
 Mejoras en el UI & UX.
 Mejoras de rendimientos. = Niveles ( intermedios de niveles y mas ).
 Cualquier Otra idea para el juego. = Entre otros.
-Colaboladores
 
+Creador
 Mario Josue Grieco Villamizar - Universidad Nacional Experimental del Tachira.
 
-Level Artist
-Lead Game Designer
-administrator
-Creative Director
-Level Designer
-
+Colaboladores
 Sebastian Josue Villamizar - Instituto Politecnico Santiago Mariño.
-
-Game Tester
+...
