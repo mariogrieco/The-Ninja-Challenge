@@ -31,6 +31,7 @@ y algunos de logica.
 
 seran arreglados en versiones posteriores ( version actual 0.02 para la fecha 11/12/2016 ),
 ( aun no agregados los derechos de autor de las imagenes o los recursos usados en esta version ).
+ultima actualizacion 13/12/2016.
 
 ###TODO
  - BUGS.
